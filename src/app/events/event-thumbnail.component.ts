@@ -14,7 +14,14 @@ import { Input, Component } from '@angular/core';
             <span>{{event.location.city}},{{event.location.country}}</span>
         </div>
     </div>
-    `
+    `,
+    styles: [
+        `
+            .thumbnail {
+                min-height: 210px;
+            }
+        `
+    ]
 })
 export class EventThumbnailComponent {
     @Input() event: any;
